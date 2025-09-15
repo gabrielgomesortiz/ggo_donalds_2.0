@@ -68,7 +68,7 @@ function renderUsuarioLogado(container, usuario) {
   container.innerHTML = `
     <div class="usuario-dropdown" style="position: relative; display: flex; align-items: center;">
       <div class="usuario-avatar" id="usuarioAvatar" title="Clique para mais opções" style="cursor: pointer; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
-        <img src="../../assets/user.svg" alt="Ícone de Usuário" style="width: 24px; height: 24px;">
+        <img src=".././assets/user.svg" alt="Ícone de Usuário" style="width: 24px; height: 24px;">
       </div>
       <div class="usuario-menu" id="usuarioMenu" style="display: none; position: absolute; background: white; border: 1px solid #ccc; border-radius: 8px; padding: 10px; margin-top: 8px; right: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); z-index: 1000; min-width: 150px;">
         <div class="usuario-nome-menu" style="font-weight: 600; margin-bottom: 10px;">${escapeHtml(usuario.nome ?? "Usuário")}</div>

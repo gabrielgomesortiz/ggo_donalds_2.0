@@ -47,22 +47,23 @@ INSERT INTO Produto (nome, id_categoria, caminho_imagem, quantidade_estoque, dat
 ('Chocolate Quente 200ml', 2, 'imgs/41.jpeg', 100, '2023-08-01', 8.50),
 ('Chocolate Quente 300ml', 2, 'imgs/42.jpeg', 100, '2023-08-01', 10.50),
 ('Super Cheddar GGOsMelt Bacon', 3, 'imgs/43.jpeg', 30, '2023-08-01', 35.90),
-('Big GGOs', 3, 'imgs/44.jpeg', 30, '2023-08-01', 32.50),
-('Big GGOs', 3, 'imgs/45.jpeg', 30, '2023-08-01', 32.50),
-('Duplo Quarterão', 3, 'imgs/46.jpeg', 30, '2023-08-01', 34.90),
-('Duplo Quarterão', 3, 'imgs/47.jpeg', 30, '2023-08-01', 34.90),
-('Quarterão com Queijo', 3, 'imgs/48.jpeg', 30, '2023-08-01', 28.75),
-('Quarterão com Queijo', 3, 'imgs/49.jpeg', 30, '2023-08-01', 28.75),
-('GGOsNífico Bacon', 3, 'imgs/50.jpeg', 30, '2023-08-01', 31.20),
-('GGOsNífico Bacon', 3, 'imgs/51.jpeg', 30, '2023-08-01', 31.20),
-('Duplo Cheddar GGOsMelt', 3, 'imgs/52.jpeg', 30, '2023-08-01', 33.80),
-('Duplo Cheddar GGOsMelt', 3, 'imgs/53.jpeg', 30, '2023-08-01', 33.80),
-('Cheddar GGOsMelt', 3, 'imgs/54.jpeg', 30, '2023-08-01', 27.60),
-('Cheddar GGOsMelt', 3, 'imgs/55.jpeg', 30, '2023-08-01', 27.60),
-('Duplo Burger Bacon', 3, 'imgs/56.jpeg', 30, '2023-08-01', 37.90),
-('Duplo Burger Bacon', 3, 'imgs/57.jpeg', 30, '2023-08-01', 37.90),
-('Duplo Burger com Queijo', 3, 'imgs/58.jpeg', 30, '2023-08-01', 36.50),
-('Duplo Burger com Queijo 2', 3, 'imgs/59.jpeg', 30, '2023-08-01', 37.59);
+('Big GGOs Clássico', 3, 'imgs/44.jpeg', 30, '2023-08-01', 32.50),
+('Big GGOs Especial', 3, 'imgs/45.jpeg', 30, '2023-08-01', 32.50),
+('Duplo Quarterão Tradicional', 3, 'imgs/46.jpeg', 30, '2023-08-01', 34.90),
+('Duplo Quarterão Bacon', 3, 'imgs/47.jpeg', 30, '2023-08-01', 34.90),
+('Quarterão com Queijo Simples', 3, 'imgs/48.jpeg', 30, '2023-08-01', 28.75),
+('Quarterão com Queijo Duplo', 3, 'imgs/49.jpeg', 30, '2023-08-01', 28.75),
+('GGOsNífico Bacon Original', 3, 'imgs/50.jpeg', 30, '2023-08-01', 31.20),
+('GGOsNífico Bacon Extra', 3, 'imgs/51.jpeg', 30, '2023-08-01', 31.20),
+('Duplo Cheddar GGOsMelt Clássico', 3, 'imgs/52.jpeg', 30, '2023-08-01', 33.80),
+('Duplo Cheddar GGOsMelt Supreme', 3, 'imgs/53.jpeg', 30, '2023-08-01', 33.80),
+('Cheddar GGOsMelt Tradicional', 3, 'imgs/54.jpeg', 30, '2023-08-01', 27.60),
+('Cheddar GGOsMelt Deluxe', 3, 'imgs/55.jpeg', 30, '2023-08-01', 27.60),
+('Duplo Burger Bacon Clássico', 3, 'imgs/56.jpeg', 30, '2023-08-01', 37.90),
+('Duplo Burger Bacon Supreme', 3, 'imgs/57.jpeg', 30, '2023-08-01', 37.90),
+('Duplo Burger com Queijo Clássico', 3, 'imgs/58.jpeg', 30, '2023-08-01', 36.50),
+('Duplo Burger com Queijo Especial', 3, 'imgs/59.jpeg', 30, '2023-08-01', 37.59);
+
 
 INSERT INTO Cargo (nome_cargo) VALUES
 ('Faxineiro'),
@@ -77,13 +78,11 @@ INSERT INTO Pessoa (nome, email, senha) VALUES
 ('Funcionario 1', 'func1@email.com', 'senha123'),
 ('Funcionario 2', 'func2@email.com', 'senha123'),
 ('Funcionario 3', 'func3@email.com', 'senha123');
-('Funcionario 4', 'func4@email.com', 'senha123');
 
 INSERT INTO Funcionario (id_pessoa, id_cargo, salario, data_inicio) VALUES
 (5, 1, 1500.00, '2023-08-01'),
 (6, 2, 5000.00, '2023-08-01'),
 (7, 3, 10000.00, '2023-08-01');
-(10, 2, 10000.00, '2023-08-01');
 
 
 INSERT INTO Forma_Pagamento (nome_forma_pagamento) VALUES
@@ -94,10 +93,13 @@ INSERT INTO Pagamento (id_forma_pagamento, status_pagamento) VALUES
 (1, TRUE),
 (2, TRUE),
 (1, TRUE),
-(2, FALSE);
+(2, TRUE); 
 
 INSERT INTO Pedido (id_pessoa, id_pagamento, data_pedido) VALUES
 (1, 1, '2023-08-01 10:00:00'),
 (2, 2, '2023-08-02 11:30:00'),
 (3, 3, '2023-08-03 12:45:00'),
 (4, 4, '2023-08-04 15:00:00');
+
+
+
