@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crud.css">
+    <link rel="stylesheet" href="../reset.css">
+</head>
+
+<body>
+    <button id="btnVoltar">⬅ Voltar</button>
+    <div class="container">
+
+        <div>
+            <h3>Escolha a seção:</h3>
+            <label><input type="radio" name="section" value="funcionario"> Funcionário</label>
+            <label><input type="radio" name="section" value="pessoa"> Pessoa</label>
+            <label><input type="radio" name="section" value="produto"> Produto</label>
+            <label><input type="radio" name="section" value="categoria"> Categoria</label>
+            <label><input type="radio" name="section" value="cargo"> Cargo</label>
+            <form id="edicao">
+
+
+                <div class="search-container">
+                    <label for="searchId">Buscar por ID:</label>
+                    <div class="search-input-group">
+                        <input type="number" id="searchId" placeholder="Digite o ID para buscar">
+                        <button type="button" id="btnBuscar">🔍 Buscar</button>
+
+                        <button type="button" id="btnIncluir" class="btn-primary">Incluir</button>
+                        <button type="button" id="btnAlterar" class="btn-secondary"
+                            style="display: none;">Alterar</button>
+                        <button type="button" id="btnExcluir" class="btn-danger" style="display: none;">Excluir</button>
+                        <button type="button" id="btnSalvar" class="btn-save" style="display: none;">Salvar</button>
+                        <button type="button" id="btnCancelar" class="btn-cancel">Cancelar</button>
+                    </div>
+                </div>
+
+                <!-- FORMULÁRIO FUNCIONÁRIO -->
+                <div class="section-form" id="funcionario">
+                    <h4>Funcionário</h4>
+                    <label>Data de Início: <input type="date" id="funcData"></label><br>
+                    <label>Salário: <input type="number" step="0.01" id="funcSalario"></label><br>
+                    <label for="funcCargo">Cargo:</label>
+                    <select id="funcCargo"></select>
+                    <br>
+                </div>
+
+                <!-- FORMULÁRIO PESSOA -->
+                <div class="section-form" id="pessoa">
+                    <h4>Pessoa</h4>
+                    <label>Nome: <input type="text" id="pessoaNome"></label><br>
+                    <label>Email: <input type="email" id="pessoaEmail"></label><br>
+                    <label>Senha: <input type="password" id="pessoaSenha">
+                    </label><br>
+                </div>
+
+                <!-- FORMULÁRIO PRODUTO -->
+                <div class="section-form" id="produto">
+                    <h4>Produto</h4>
+                    <label>Nome: <input type="text" id="produtoNome"></label><br>
+                    <label>Categoria:
+                        <select id="produtoCategoria">
+
+                        </select>
+                    </label><br>
+                    <label>Imagem do Produto: <input type="file" id="produtoImg"></label><br>
+                    <label>Quantidade em Estoque: <input type="number" id="produtoQtd"></label><br>
+                    <label>Data de Fabricação: <input type="date" id="produtoData"></label><br>
+                    <label>Preço: <input type="number" step="0.01" id="produtoPreco"></label><br>
+                </div>
+
+                <!-- FORMULÁRIO CATEGORIA -->
+                <div class="section-form" id="categoria">
+                    <h4>Categoria</h4>
+                    <label>Nome: <input type="text" id="catNome"></label><br>
+                </div>
+
+                <!-- FORMULÁRIO CARGO -->
+                <div class="section-form" id="cargo">
+                    <h4>Cargo</h4>
+                    <label>Nome: <input type="text" id="cargoNome"></label><br>
+                </div>
+
+        </div>
+        </form>
+
+        <!-- TABELAS DINÂMICAS -->
+        <div id="tables">
+            <h3>Tabelas Geradas</h3>
+            <div id="tableFuncionario"></div>
+            <div id="tablePessoa"></div>
+            <div id="tableProduto"></div>
+            <div id="tableCategoria"></div>
+            <div id="tableCargo"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

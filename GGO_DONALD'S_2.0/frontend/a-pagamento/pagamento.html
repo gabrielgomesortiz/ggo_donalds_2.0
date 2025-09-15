@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagamento</title>
+    <link rel="stylesheet" href="pagamento.css">
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs@gh-pages/qrcode.min.js"></script>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="icon" href="../../assets/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="ttulo_cabecalho">formas de pagamento</h1>
+    </header>
+    <main class="container">
+        <section class="radio_buttons">
+            <input type="radio" id="cartao" class="opcoes" name="metodoPagamento" value="cartao">
+            <p class="texto_radio">cartão de crédito ou débito</p>
+            <div class="container_card">
+                <img src="../../assets/cartoes_icons/banco-do-brasil.svg" alt="Banco do Brasil">
+                <img src="../../assets/cartoes_icons/bradesco.svg" alt="Bradesco">
+                <img src="../../assets/cartoes_icons/santander.svg" alt="Santander">
+            </div>
+            <div class="container_dados">
+                <label for="input_cpf">CPF</label>
+                <input type="text" id="input_cpf">
+                <label for="input_endereco">Endereço</label>
+                <input type="text" id="input_endereco">
+                <label for="input_cartao_num">Número do Cartão</label>
+                <input type="number" id="input_cartao_num">
+                <button id="btn_pagar" class="concluir">Pagar</button>
+            </div>
+        </section>
+
+        <section class="radio_buttons">
+            <input type="radio" id="pix" class="opcoes" name="metodoPagamento" value="pix">
+            <p class="texto_radio">PIX</p>
+            <div class="pix_container">
+                <div id="qrcode"></div>
+                <p>Escaneie o QR Code acima para pagar via PIX</p>
+                <div class="pix_code">
+                    <span id="pix_code_text"></span>
+                    <button id="btn_copiar_pix" class="copiar_codigo">Copiar Código PIX</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./pagamento.js"></script>
+</body>
+
+</html>

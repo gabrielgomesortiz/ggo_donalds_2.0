@@ -1,0 +1,74 @@
+GGO_DONALD'S_2.0/
+│
+├── backend/
+│   ├── controllers/
+│   │   ├── cargoController.js
+│   │   ├── carrinhoController.js
+│   │   ├── categoriaController.js
+│   │   ├── funcionarioController.js
+│   │   ├── loginController.js
+│   │   ├── pagamentoController.js
+│   │   ├── pessoaController.js
+│   │   └── produtoController.js
+│   │
+│   ├── routes/
+│   │   ├── cargoRoutes.js
+│   │   ├── carrinhoRoutes.js
+│   │   ├── categoriaRoutes.js
+│   │   ├── funcionarioRoutes.js
+│   │   ├── loginRoutes.js
+│   │   ├── pagamentoRoutes.js
+│   │   ├── pessoaRoutes.js
+│   │   └── produtoRoutes.js
+│   │
+│   ├── database.js
+│   └── server.js
+│
+├── data/
+│   ├── ggo_CREATE_TABLE.sql
+│   └── ggo_inserts.sql
+│
+├── frontend/
+│   ├── a-conta/
+│   │   ├── conta.css
+│   │   ├── conta.html
+│   │   └── conta.JS
+│   │
+│   ├── a-criar_login/
+│   │   ├── cadastro.css
+│   │   ├── cadastro.html
+│   │   └── cadastro.js
+│   │
+│   ├── a-crud/
+│   │   ├── crud.css
+│   │   ├── crud.html
+│   │   └── script.js
+│   │
+│   ├── a-login/
+│   │   ├── login.css
+│   │   ├── login.html
+│   │   └── login.js
+│   │
+│   ├── a-pagamento/   (vazio por enquanto)
+│   │   ├── pagamento.css
+│   │   ├── pagamento.html
+│   │   └── pagamento.js
+│   ├── imgs/          # imagens dos produtos
+│   │
+│   ├── style/
+│   │   ├── footer.css
+│   │   ├── header.css
+│   │   ├── main.css
+│   │   ├── reset.css
+│   │   └── style.css
+│   │
+│   ├── index.html
+│   └── main.js
+│
+├── node_modules/
+├── juntarVideos.sh
+├── package.json
+└── package-lock.json
+
+
+guarde isso

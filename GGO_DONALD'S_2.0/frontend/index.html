@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GGO DONALD's</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="icon" href="../assets/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho__menu">
+      <button class="comidas menu" onclick="menu()" id="menu">
+        <img class="imgs__cabecacalho" src="../assets/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" />
+      </button>
+
+      <ul class="menu__opcoes">
+        <li class="opcoes">
+          <a href="./html__menu/ajuda.html" class="liks__menu">
+            Ajuda
+          </a>
+        </li>
+        <li class="opcoes">
+          <a href="./html__menu/sobre_o_dev.html" class="liks__menu">
+            Sobre o dev
+          </a>
+        </li>
+        <li class="opcoes">
+          <a href="./html__menu/sobre_o_projeto.html" class="liks__menu">
+            Sobre o projeto
+          </a>
+        </li>
+        <li class="opcoes">
+          <a href="./html__menu/video_do_projeto.html" class="liks__menu">
+            Video do projeto
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="cabecalho__nav">
+      <button class="comidas hamburguer" id="hamburguer">
+        <img class="imgs__cabecacalho" src="../assets/lunch_dining_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" />
+      </button>
+      <button class="comidas porcoes" id="porcoes">
+        <img class="imgs__cabecacalho" src="../assets/batata.svg">
+      </button>
+      <button class="comidas bebidas" id="bebidas">
+        <img class="imgs__cabecacalho" src="../assets/cola.svg">
+      </button>
+    </nav>
+
+    <div class="user">
+      <button class="criar_entrar_conta" onclick="window.location.href='./a-criar_login/cadastro.html'">
+        Criar Conta
+      </button>
+      <button class="criar_entrar_conta" onclick="window.location.href='./a-login/login.html'">
+        Entrar
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <form action="nada" method="post">
+      <section class="cardapio">
+
+      </section>
+      <button type="submit" class="submeter">
+        <img src="../assets/arrow_forward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Enviar formulário">
+      </button>
+    </form>
+  </main>
+
+
+  <footer class="rodape">
+    <p class="paragrafo_rodape">telefone: (44)55 9999-9999</p>
+    <p class="paragrafo_rodape">Endereco: Rua São João bastos almeida Eucledis da silva</p>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

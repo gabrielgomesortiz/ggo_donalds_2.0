@@ -1,0 +1,92 @@
+/* Tamanhos base */
+:root {
+  /* Cores (mantidas do original) */
+  --azul: #2563EB;
+  --amarelo: #FFD700;
+  --verde: #16A34A;
+  --vermelho: #E63946;
+  --vermelho_escuro: #b1313c;
+  --cinza: #4B5563;
+  
+  /* Tamanhos relativos */
+  --base-size: 1rem;       /* 16px padrão */
+  --padding-base: 1.25em;  /* 20px */
+  --margin-base: 1em;      /* 16px */
+  --radius-base: 0.5em;    /* 8px */
+}
+
+/* Estilos básicos com unidades relativas */
+body {
+  font-family: Arial, sans-serif;
+  font-size: var(--base-size);
+  background: #F3F4F6;
+  color: var(--cinza);
+  padding: var(--padding-base);
+}
+
+.titulo {
+  color: var(--vermelho_escuro);
+  text-align: center;
+  margin: calc(var(--margin-base) * 1.25) 0; /* 20px */
+  font-size: 1.5em; /* 24px */
+}
+
+/* Área da conta */
+.conta {
+  background: white;
+  border-radius: var(--radius-base);
+  padding: var(--padding-base);
+  max-width: 37.5em; /* 600px */
+  margin: 0 auto var(--margin-base);
+  box-shadow: 0 0.125em 0.25em rgba(0,0,0,0.1); /* 0 2px 4px */
+}
+
+/* Itens da conta */
+.conta-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.625em; /* 10px */
+  padding-bottom: 0.625em; /* 10px */
+  border-bottom: 0.0625em solid #D1D5DB; /* 1px */
+}
+
+.coluna_nome { width: 60%; }
+.coluna_quantidade { width: 20%; text-align: center; }
+.coluna_preco { width: 20%; text-align: right; }
+
+/* Total */
+.conta-total {
+  margin-top: 1.25em; /* 20px */
+  text-align: right;
+  font-weight: bold;
+  color: var(--vermelho);
+}
+
+/* Botões */
+.container_buttons {
+  display: flex;
+  max-width: 37.5em; /* 600px */
+  margin: 0 auto;
+  gap: 0.9375em; /* 15px */
+}
+
+.buttons_volta_prosseguir {
+  padding: 0.75em 1.25em; /* 12px 20px */
+  border: none;
+  border-radius: var(--radius-base);
+  font-size: 1em;
+  cursor: pointer;
+  flex: 1;
+}
+
+.buttons_volta_prosseguir:first-child {
+  background:var(--amarelo);
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+}
+
+.buttons_volta_prosseguir:last-child {
+  background: var(--vermelho);
+  color: white;
+  border: 1px solid black;
+} 

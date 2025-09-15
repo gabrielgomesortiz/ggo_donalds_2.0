@@ -1,0 +1,13 @@
+.rodape {
+    position: relative; /* Mudei de static para relative */
+    padding: 1em;
+    background-color: var(--vermelho);
+    border-top: 1px solid black;
+    z-index: 90; /* Abaixo do botão */
+}
+
+.paragrafo_rodape {
+    font-family: var(--font_principal);
+    margin: .5em;
+    color: white;
+}
